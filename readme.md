@@ -29,7 +29,7 @@ pip install flask flask-sqlalchemy flask-login werkzeug
 在项目根目录下执行：
 
 ```bash
-cd d:/Code/flaskOnlineShop
+cd flaskOnlineShop
 python run.py
 ```
 
