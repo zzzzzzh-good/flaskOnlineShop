@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row mb-5">
+    <div class="col-md-6">
+        <img src="{{ product.image_url }}" class="img-fluid rounded shadow" alt="{{ product.name }}">
+    </div>
+    <div class="col-md-6">
+        <h1 class="display-5">{{ product.name }}</h1>
+        <h3 class="text-danger my-3">¥{{ product.price }}</h3>
+        <p class="lead">{{ product.description }}</p>
+        <button class="btn btn-primary btn-lg w-100 mt-3">加入购物车 (演示)</button>
+    </div>
+</div>
+
+<hr>
+
+<div class="row mt-4">
+    <div class="col-lg-8 mx-auto">
+        <h4 class="mb-4">用户评价 ({{ product.comments|length }})</h4>
+
+        <div class="mb-5">
+            {% for comment in product.comments %}
+            <div class="card mb-3 border-0 bg-white shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-between">
+                        <span>👤 {{ comment.user.username }}</span>
+                        <small>{{ comment.date_posted.strftime('%Y-%m-%d %H:%M') }}</small>
+                    </h6>
+                    <p class="card-text">{{ comment.content }}</p>
+                </div>
+            </div>
+            {% else %}
+                <p class="text-muted text-center">暂无评论，快来抢沙发吧！</p>
+            {% endfor %}
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">发表评论</h5>
+                <form method="POST">
+                    <div class="mb-3">
+                        <textarea class="form-control" name="content" rows="3" placeholder="分享您的使用体验..." required></textarea>
+                    </div>
+                    {% if current_user.is_authenticated %}
+                        <button type="submit" class="btn btn-success">提交评论</button>
+                    {% else %}
+                        <a href="{{ url_for('auth.login') }}" class="btn btn-secondary">登录后评论</a>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

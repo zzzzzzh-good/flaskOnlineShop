@@ -1,0 +1,56 @@
+[
+  {
+    "name": "高性能笔记本电脑",
+    "price": 8999.00,
+    "description": "搭载最新处理器，超长续航，适合商务办公与轻度创作。",
+    "image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
+  },
+  {
+    "name": "无线降噪耳机",
+    "price": 1299.00,
+    "description": "沉浸式音质体验，主动降噪，佩戴舒适，续航 30 小时。",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+  },
+  {
+    "name": "智能手表 Pro",
+    "price": 2499.00,
+    "description": "健康监测，运动模式，超视网膜显示屏，支持 GPS 定位。",
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+  },
+  {
+    "name": "旗舰智能手机",
+    "price": 6499.00,
+    "description": "超高清三摄系统，骁龙处理器，5000mAh 大电池，支持 5G。",
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+  },
+  {
+    "name": "平板电脑",
+    "price": 4299.00,
+    "description": "12.9 英寸液晶屏，支持手写笔，轻松应对绘图与视频创作。",
+    "image_url": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500"
+  },
+  {
+    "name": "机械键盘",
+    "price": 699.00,
+    "description": "茶轴手感，RGB 背光，铝合金外壳，适合程序员与游戏玩家。",
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500"
+  },
+  {
+    "name": "4K 微单相机",
+    "price": 12999.00,
+    "description": "全画幅传感器，4K 视频录制，防抖系统，专业摄影首选。",
+    "image_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500"
+  },
+  {
+    "name": "便携蓝牙音箱",
+    "price": 499.00,
+    "description": "360° 环绕立体声，防水防尘，续航 24 小时，随身携带。",
+    "image_url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+  },
+  {
+    "name": "4K 曲面显示器",
+    "price": 3599.00,
+    "description": "34 英寸超宽曲面屏，144Hz 刷新率，护眼认证，沉浸式体验。",
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500"
+  }
+]
